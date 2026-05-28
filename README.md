@@ -1,1 +1,1 @@
-Aplicación de receras
+Aplicación de recetas
