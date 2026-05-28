@@ -1,0 +1,146 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Número total de recetas */
+
+#totalRecetas {
+    color: #e70808;
+    font-weight: bold;
+}
+
+/* =========================
+   CONTENEDOR DE RECETAS
+========================= */
+
+#recetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* =========================
+   TARJETA DE RECETA
+========================= */
+
+.card-receta {
+    background: white;
+    border-left: 15px solid #035dc4;
+    border-radius: 15px;
+
+    /* Oculta cualquier contenido que sobresalga */
+    overflow: hidden;
+
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    /* Animación suave */
+    transition: transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+
+.card-receta:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   TÍTULO Y CATEGORÍA
+========================= */
+
+/* Contenedor del nombre + categoría */
+
+.titulo-receta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Nombre de la receta */
+
+.card-receta h3 {
+    margin-top: 0;
+    color: #035dc4;
+    font-family: 'Trebuchet MS', 
+                 'Lucida Sans Unicode', 
+                 'Lucida Grande', 
+                 'Lucida Sans', 
+                 Arial, 
+                 sans-serif;
+}
+
+/* Etiqueta de categoría */
+
+.categoria {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* =========================
+   COLORES POR CATEGORÍA
+========================= */
+
+/* Plato Principal */
+
+.principal {
+    background-color: #ff6600;
+}
+
+/* Entrante */
+
+.entrante {
+    background-color: #2ecc71;
+}
+
+/* Postre */
+
+.postre {
+    background-color: #e91e63;
+}
+
+/* =========================
+   PÁRRAFOS
+========================= */
+
+.card-receta p {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Strong personalizado */
+
+.card-receta strong {
+    color: #222;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+/* =========================
+   INGREDIENTES
+========================= */
+
+.ingredientes {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff3e6;
+    border-radius: 10px;
+}
