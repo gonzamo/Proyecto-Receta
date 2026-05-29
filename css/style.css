@@ -40,14 +40,13 @@ h1 {
 
 .card-receta {
     background: white;
-    border-left: 15px solid #035dc4;
     border-radius: 15px;
 
     /* Oculta cualquier contenido que sobresalga */
     overflow: hidden;
 
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
     /* Animación suave */
     transition: transform 0.2s ease;
@@ -57,6 +56,28 @@ h1 {
 
 .card-receta:hover {
     transform: scale(1.03);
+}
+
+/* =========================
+   BORDES POR CATEGORÍA
+========================= */
+
+/* Plato Principal */
+
+.card-receta.principal {
+    border-left: 15px solid #ff6600;
+}
+
+/* Entrante */
+
+.card-receta.entrante {
+    border-left: 15px solid #2ecc71;
+}
+
+/* Postre */
+
+.card-receta.postre {
+    border-left: 15px solid #e91e63;
 }
 
 /* =========================
@@ -77,12 +98,12 @@ h1 {
 .card-receta h3 {
     margin-top: 0;
     color: #035dc4;
-    font-family: 'Trebuchet MS', 
-                 'Lucida Sans Unicode', 
-                 'Lucida Grande', 
-                 'Lucida Sans', 
-                 Arial, 
-                 sans-serif;
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
 }
 
 /* Etiqueta de categoría */
@@ -102,19 +123,19 @@ h1 {
 
 /* Plato Principal */
 
-.principal {
+.categoria.principal {
     background-color: #ff6600;
 }
 
 /* Entrante */
 
-.entrante {
+.categoria.entrante {
     background-color: #2ecc71;
 }
 
 /* Postre */
 
-.postre {
+.categoria.postre {
     background-color: #e91e63;
 }
 
@@ -143,4 +164,80 @@ h1 {
     padding: 10px;
     background: #fff3e6;
     border-radius: 10px;
+}
+
+/* =========================
+   ESTILO PRINCIPAL DE LOS BOTONES
+========================= */
+
+.card-receta button {
+
+    margin-top: 15px;
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.card-receta button:active {
+
+    transform: scale(0.97);
+}
+
+/* =========================
+   BOTONES FAVORITAS
+========================= */
+
+/* NO favorita */
+.card-receta button.no-favorita {
+    background-color: #e5e90c;
+}
+
+.card-receta button.no-favorita:hover {
+    background-color: #c9cc0c;
+}
+
+/* FAVORITA */
+.card-receta button.favorita {
+    background-color: #6f42c1;
+}
+
+.card-receta button.favorita:hover {
+    background-color: #59359a;
+}
+
+
+/* =========================
+   BOTONES HECHAS
+========================= */
+
+/* NO hecha */
+.card-receta button.no-hecha {
+    background-color: #8a6109;
+}
+
+.card-receta button.no-hecha:hover {
+    background-color: #af7b0b;
+}
+
+/* HECHA */
+.card-receta button.hecha {
+    background-color: #28a745;
+}
+
+.card-receta button.hecha:hover {
+    background-color: #1e7e34;
 }
