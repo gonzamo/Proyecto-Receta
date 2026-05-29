@@ -104,12 +104,13 @@ export function crearTarjetaReceta(receta) {
 
     `;
 
+    //Asignamos todos los botones
     const botones = div.querySelectorAll("button");
 
     //Seleccionamos el primer boton (receta favorita)
     const botonFavorita = botones[0];
 
-    //Botón de reeta hecha
+    //Botón de receta hecha
     const botonHecha = botones[1];
 
     //La acción que hace cuando haces click al botón
@@ -123,8 +124,7 @@ export function crearTarjetaReceta(receta) {
 // Mostrar todas las recetas
 export function mostrarRecetas(listaRecetas) {
 
-    const listaTotalRecetas =
-        document.querySelector("#recetas");
+    const listaTotalRecetas = document.querySelector("#recetas");
 
     listaTotalRecetas.innerHTML = "";
 
@@ -142,8 +142,6 @@ export function totalRecetas(recetas) {
     return recetas.length;
 }
 
-//CRUD
-//Filtrar por categorías
 //Marcar como hecha
 function cambiarEstadoHecha(receta) {
     receta.receta_hecha = !receta.receta_hecha

@@ -2,7 +2,7 @@ import { recetas, totalRecetas, crearTarjetaReceta, mostrarRecetas } from "./rec
 
 const totalRecetasHTML = document.querySelector("#totalRecetas");
 
-// Mostrar total
+// Mostrar total de recetas
 totalRecetasHTML.textContent = totalRecetas(recetas);
 
 mostrarRecetas(recetas);
