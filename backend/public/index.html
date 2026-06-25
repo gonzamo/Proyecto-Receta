@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                🍳 Mis Recetas
+            </div>
+            
+            <nav>
+                <h1>Número de recetas: <span id="totalNumRecetas"></span></h1>
+            </nav>
+
+            <div class="tabs">
+                <button id="verTodas" class="tab active">Ver Recetas</button>
+                <button id="verFavoritas" class="tab">Ver Recetas Favoritas</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="buscador">
+            <button id="nuevaReceta">+ Añadir receta</button>
+
+            <input type="text" id="buscador" placeholder="Buscar receta">
+
+            <div class="select-container">
+                <select id="filtro">
+                    <option value="nombre">Nombre</option>
+                    <option value="categoria">Categoría</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="recetas"></div>
+
+    </main>
+
+</body>
+<script type="module" src="app.js"></script>
+
+</html>

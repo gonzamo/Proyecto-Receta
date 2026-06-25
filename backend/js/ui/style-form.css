@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+}
+
+/* Centrar el form como modal */
+form#formReceta {
+  width: 380px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Título */
+form#formReceta h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Labels */
+form#formReceta label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Inputs y select */
+form#formReceta input,
+form#formReceta select,
+form#formReceta textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+form#formReceta input:focus,
+form#formReceta select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.3);
+}
+
+/* Botones */
+form#formReceta button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Botón principal */
+form#formReceta button[type="submit"] {
+  background: #4a90e2;
+  color: white;
+}
+
+form#formReceta button[type="submit"]:hover {
+  background: #3b7bd1;
+}
+
+/* Botón cerrar */
+#cerrarModal {
+  background: #e74c3c;
+  color: white;
+}
+
+#cerrarModal:hover {
+  background: #c0392b;
+}
+
+
+#ingredientes {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: vertical; /* el usuario puede agrandarlo */
+}
